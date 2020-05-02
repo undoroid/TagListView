@@ -167,6 +167,12 @@ open class TagView: UIButton {
         setupView()
     }
     
+    public init(title: NSAttributedString) {
+        super.init(frame: CGRect.zero)
+        setAttributedTitle(title, for: UIControl.State())
+        setupView()
+    }
+    
     private func setupView() {
         titleLabel?.lineBreakMode = titleLineBreakMode
 
